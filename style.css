@@ -87,14 +87,19 @@ ul {
     display: flex;
     flex: 1;
     padding: 50px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .container {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 50px;
     
 }
+
+.block-two {
+    margin-bottom: 25px;
+}
+
 .block-two,
 .block-four,
 .block-three {
@@ -109,12 +114,13 @@ ul {
 .block-three {
     background-color: #E5E7EB;
     font-size: 36px;
+    flex-direction: row;
 }
 .block-four  {
     display: flex;
     align-content: center;
     background-color:#E5E7EB;
-    padding: 50px;
+    padding: 25px;
     flex-wrap: wrap;
 }
 
@@ -124,7 +130,7 @@ ul {
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
-    max-width: fit-content;
+    max-width: 300px;
     flex-wrap: wrap;
     
 }
@@ -139,8 +145,11 @@ ul {
 
 .modaltext, .modal-text, .herosec {
     font-size: 18px;
-    color: #F9FAF8;   
+    color: #F9FAF8; 
+    
+    
 }
+
 
 .modal-text{
    font-weight: bolder; 
@@ -157,7 +166,7 @@ button {
     color: white;
     border-radius: 30px 25px;
     font-weight: bold;
-    border: 1px solid white;
+    
 }
 
 .subtext {
@@ -176,8 +185,8 @@ button {
     flex-wrap: wrap;
     background-color: #3882f6;
     border-radius: 30px 25px;
-    width: 500px;
-    height: 125px;
+    max-width: 590px;
+    height: auto;
     padding: 50px;
     
 }
@@ -190,6 +199,7 @@ button {
     font-weight: bold;
     
     color: #1F2937;
+    margin-top: 15px;
 }
 
 .quote {
@@ -204,25 +214,45 @@ button {
     height: 25px;
     background-color:#E5E7EB;
 }
+
+.quote, .sub-quote {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 567px;
+    justify-content: center;
+    align-content: center;
+}
+
+.flextext {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 567px;
+    justify-content: flex-end;
+    align-content: center;
+    flex: 1 1 0; 
+}
 /* Images */
-#image-excluded {
+.image-excluded {
     display: flex;
     flex: 1;
-    justify-content: flex-end;
+    justify-content: flex-start;
     max-width: 25%;
     margin-left: 200px;
-    flex-shrink: 1;
+    flex-shrink: 0; 
+
 
 }
 
 .image-rounded {
     border-radius: 100%;
-    max-width: 120px;
+    display: flex;
+    justify-content: flex-start;
+    
 }
 img {
     max-width: 100%;
     height: auto;
-    
+    border-radius: 50%;
 }
 .info {
     display: flex;
@@ -234,9 +264,10 @@ img {
 }
 .teenycont {
     display: flex;
-    border: #3882f6 10px groove;
-    width: 200px;
-    height: auto;
-    border-radius: 15% 25%;
-    background-blend-mode: color;
+    border: #3882f6 10px ;
+    width: 150px;
+    height: 150px;
+    
+    border-radius: 50%;
+   border-style: outset;
 }
